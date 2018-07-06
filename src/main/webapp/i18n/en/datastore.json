@@ -1,0 +1,27 @@
+
+{
+    "ltqProvisionApp": {
+        "datastore" : {
+            "home": {
+                "title": "Datastores",
+                "createLabel": "Create a new Datastore",
+                "createOrEditLabel": "Create or edit a Datastore"
+            },
+            "created": "A new Datastore is created with identifier {{ param }}",
+            "updated": "A Datastore is updated with identifier {{ param }}",
+            "deleted": "A Datastore is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Datastore {{ id }}?"
+            },
+            "detail": {
+                "title": "Datastore"
+            },
+            "moRef": "Mo Ref",
+            "name": "Name",
+            "wwn": "Wwn",
+            "storagearray": "Storagearray",
+            "datastorecluster": "Datastorecluster",
+            "vmhost": "Vmhost"
+        }
+    }
+}

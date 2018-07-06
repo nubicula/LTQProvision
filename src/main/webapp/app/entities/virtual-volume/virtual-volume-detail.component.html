@@ -1,0 +1,51 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="virtualVolume">
+            <h2><span jhiTranslate="ltqProvisionApp.virtualVolume.detail.title">Virtual Volume</span> {{virtualVolume.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="ltqProvisionApp.virtualVolume.name">Name</span></dt>
+                <dd>
+                    <span>{{virtualVolume.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.virtualVolume.wwn">Wwn</span></dt>
+                <dd>
+                    <span>{{virtualVolume.wwn}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.virtualVolume.lunID">Lun ID</span></dt>
+                <dd>
+                    <span>{{virtualVolume.lunID}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.virtualVolume.replicated">Replicated</span></dt>
+                <dd>
+                    <span>{{virtualVolume.replicated}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.virtualVolume.datastore">Datastore</span></dt>
+                <dd>
+                    <div *ngIf="virtualVolume.datastore">
+                        <a [routerLink]="['/datastore', virtualVolume.datastore?.id, 'view']">{{virtualVolume.datastore?.name}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.virtualVolume.storagearray">Storagearray</span></dt>
+                <dd>
+                    <div *ngIf="virtualVolume.storagearray">
+                        <a [routerLink]="['/storage-array', virtualVolume.storagearray?.id, 'view']">{{virtualVolume.storagearray?.name}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/virtual-volume', virtualVolume.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

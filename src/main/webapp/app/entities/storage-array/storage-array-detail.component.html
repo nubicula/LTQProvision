@@ -1,0 +1,45 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="storageArray">
+            <h2><span jhiTranslate="ltqProvisionApp.storageArray.detail.title">Storage Array</span> {{storageArray.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="ltqProvisionApp.storageArray.name">Name</span></dt>
+                <dd>
+                    <span>{{storageArray.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.storageArray.ipAddress">Ip Address</span></dt>
+                <dd>
+                    <span>{{storageArray.ipAddress}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.storageArray.userName">User Name</span></dt>
+                <dd>
+                    <span>{{storageArray.userName}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.storageArray.password">Password</span></dt>
+                <dd>
+                    <span>{{storageArray.password}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.storageArray.physicaldatacenter">Physicaldatacenter</span></dt>
+                <dd>
+                    <div *ngIf="storageArray.physicaldatacenter">
+                        <a [routerLink]="['/physical-datacenter', storageArray.physicaldatacenter?.id, 'view']">{{storageArray.physicaldatacenter?.name}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/storage-array', storageArray.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -7,6 +7,14 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
+                "vcenter": "Vcenter",
+                "physicalDatacenter": "Physical Datacenter",
+                "vmHostCluster": "VM Host Cluster",
+                "datastoreCluster": "Datastore Cluster",
+                "vmHost": "VM Host",
+                "datastore": "Datastore",
+                "storageArray": "Storage Array",
+                "virtualVolume": "Virtual Volume",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

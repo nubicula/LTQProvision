@@ -1,0 +1,26 @@
+
+{
+    "ltqProvisionApp": {
+        "storageArray" : {
+            "home": {
+                "title": "Storage Arrays",
+                "createLabel": "Create a new Storage Array",
+                "createOrEditLabel": "Create or edit a Storage Array"
+            },
+            "created": "A new Storage Array is created with identifier {{ param }}",
+            "updated": "A Storage Array is updated with identifier {{ param }}",
+            "deleted": "A Storage Array is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Storage Array {{ id }}?"
+            },
+            "detail": {
+                "title": "Storage Array"
+            },
+            "name": "Name",
+            "ipAddress": "Ip Address",
+            "userName": "User Name",
+            "password": "Password",
+            "physicaldatacenter": "Physicaldatacenter"
+        }
+    }
+}

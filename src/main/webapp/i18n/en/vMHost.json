@@ -1,0 +1,28 @@
+
+{
+    "ltqProvisionApp": {
+        "vMHost" : {
+            "home": {
+                "title": "VM Hosts",
+                "createLabel": "Create a new VM Host",
+                "createOrEditLabel": "Create or edit a VM Host"
+            },
+            "created": "A new VM Host is created with identifier {{ param }}",
+            "updated": "A VM Host is updated with identifier {{ param }}",
+            "deleted": "A VM Host is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete VM Host {{ id }}?"
+            },
+            "detail": {
+                "title": "VM Host"
+            },
+            "moRef": "Mo Ref",
+            "name": "Name",
+            "ipAddress": "Ip Address",
+            "physicaldatacenter": "Physicaldatacenter",
+            "vmhostcluster": "Vmhostcluster",
+            "datastore": "Datastore",
+            "datastorecluster": "Datastorecluster"
+        }
+    }
+}

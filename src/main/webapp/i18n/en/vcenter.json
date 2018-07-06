@@ -1,0 +1,26 @@
+
+{
+    "ltqProvisionApp": {
+        "vcenter" : {
+            "home": {
+                "title": "Vcenters",
+                "createLabel": "Create a new Vcenter",
+                "createOrEditLabel": "Create or edit a Vcenter"
+            },
+            "created": "A new Vcenter is created with identifier {{ param }}",
+            "updated": "A Vcenter is updated with identifier {{ param }}",
+            "deleted": "A Vcenter is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Vcenter {{ id }}?"
+            },
+            "detail": {
+                "title": "Vcenter"
+            },
+            "moRef": "Mo Ref",
+            "name": "Name",
+            "ipAddress": "Ip Address",
+            "userName": "User Name",
+            "password": "Password"
+        }
+    }
+}

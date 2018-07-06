@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="datastore">
+            <h2><span jhiTranslate="ltqProvisionApp.datastore.detail.title">Datastore</span> {{datastore.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="ltqProvisionApp.datastore.moRef">Mo Ref</span></dt>
+                <dd>
+                    <span>{{datastore.moRef}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.datastore.name">Name</span></dt>
+                <dd>
+                    <span>{{datastore.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.datastore.wwn">Wwn</span></dt>
+                <dd>
+                    <span>{{datastore.wwn}}</span>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.datastore.storagearray">Storagearray</span></dt>
+                <dd>
+                    <div *ngIf="datastore.storagearray">
+                        <a [routerLink]="['/storage-array', datastore.storagearray?.id, 'view']">{{datastore.storagearray?.name}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="ltqProvisionApp.datastore.datastorecluster">Datastorecluster</span></dt>
+                <dd>
+                    <div *ngIf="datastore.datastorecluster">
+                        <a [routerLink]="['/datastore-cluster', datastore.datastorecluster?.id, 'view']">{{datastore.datastorecluster?.name}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/datastore', datastore.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
