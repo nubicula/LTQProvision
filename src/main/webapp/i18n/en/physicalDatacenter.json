@@ -1,0 +1,23 @@
+
+{
+    "ltqProvisionApp": {
+        "physicalDatacenter" : {
+            "home": {
+                "title": "Physical Datacenters",
+                "createLabel": "Create a new Physical Datacenter",
+                "createOrEditLabel": "Create or edit a Physical Datacenter"
+            },
+            "created": "A new Physical Datacenter is created with identifier {{ param }}",
+            "updated": "A Physical Datacenter is updated with identifier {{ param }}",
+            "deleted": "A Physical Datacenter is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Physical Datacenter {{ id }}?"
+            },
+            "detail": {
+                "title": "Physical Datacenter"
+            },
+            "name": "Name",
+            "address": "Address"
+        }
+    }
+}

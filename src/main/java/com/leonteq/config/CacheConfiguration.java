@@ -38,6 +38,18 @@ public class CacheConfiguration {
             cm.createCache(com.leonteq.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.leonteq.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.leonteq.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.Vcenter.class.getName(), jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.PhysicalDatacenter.class.getName(), jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.VMHostCluster.class.getName(), jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.DatastoreCluster.class.getName(), jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.DatastoreCluster.class.getName() + ".vmhosts", jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.VMHost.class.getName(), jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.VMHost.class.getName() + ".datastores", jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.VMHost.class.getName() + ".datastoreclusters", jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.Datastore.class.getName(), jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.Datastore.class.getName() + ".vmhosts", jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.StorageArray.class.getName(), jcacheConfiguration);
+            cm.createCache(com.leonteq.domain.VirtualVolume.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

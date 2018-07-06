@@ -1,0 +1,46 @@
+{
+    "name": "VirtualVolume",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "wwn",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lunID",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "replicated",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "datastore",
+            "otherEntityName": "datastore",
+            "otherEntityField": "name",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "virtualVolume"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "storagearray",
+            "otherEntityName": "storageArray",
+            "otherEntityField": "name"
+        }
+    ],
+    "changelogDate": "20180706140517",
+    "entityTableName": "virtual_volume",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,24 @@
+
+{
+    "ltqProvisionApp": {
+        "datastoreCluster" : {
+            "home": {
+                "title": "Datastore Clusters",
+                "createLabel": "Create a new Datastore Cluster",
+                "createOrEditLabel": "Create or edit a Datastore Cluster"
+            },
+            "created": "A new Datastore Cluster is created with identifier {{ param }}",
+            "updated": "A Datastore Cluster is updated with identifier {{ param }}",
+            "deleted": "A Datastore Cluster is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Datastore Cluster {{ id }}?"
+            },
+            "detail": {
+                "title": "Datastore Cluster"
+            },
+            "moRef": "Mo Ref",
+            "name": "Name",
+            "vmhost": "Vmhost"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+{
+    "ltqProvisionApp": {
+        "virtualVolume" : {
+            "home": {
+                "title": "Virtual Volumes",
+                "createLabel": "Create a new Virtual Volume",
+                "createOrEditLabel": "Create or edit a Virtual Volume"
+            },
+            "created": "A new Virtual Volume is created with identifier {{ param }}",
+            "updated": "A Virtual Volume is updated with identifier {{ param }}",
+            "deleted": "A Virtual Volume is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Virtual Volume {{ id }}?"
+            },
+            "detail": {
+                "title": "Virtual Volume"
+            },
+            "name": "Name",
+            "wwn": "Wwn",
+            "lunID": "Lun ID",
+            "replicated": "Replicated",
+            "datastore": "Datastore",
+            "storagearray": "Storagearray"
+        }
+    }
+}
